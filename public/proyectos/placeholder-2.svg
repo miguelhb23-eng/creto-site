@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Imagen de proyecto de ejemplo">
+  <rect width="1200" height="800" fill="#D3D3CE"/>
+  <g fill="none" stroke="#BEBFBA" stroke-width="2"><path d="M0 0l1200 800M1200 0L0 800"/></g>
+  <rect x="40" y="40" width="1120" height="720" fill="none" stroke="#9FA3A0" stroke-width="2"/>
+  <g font-family="'Space Mono', monospace" fill="#565B5F">
+    <text x="600" y="400" font-size="34" text-anchor="middle" letter-spacing="6">FOTO DE OBRA</text>
+    <text x="600" y="450" font-size="20" text-anchor="middle" fill="#71767A">reemplazar en /public/proyectos/</text>
+  </g>
+  <rect x="40" y="700" width="180" height="6" fill="#4C555C"/>
+</svg>
