@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0a" />
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>CRETO Ingeniería y Construcciones · Manizales</title>
     <meta
       name="description"
-      content="CRETO Ingeniería y Construcciones — diseño, remodelación y obra civil en Manizales y el Eje Cafetero. Presupuestos claros, metodología BIM y equipo certificado. Cotiza por WhatsApp."
+      content="CRETO Ingeniería y Construcciones — diseño, remodelación y obra civil en Manizales y el Eje Cafetero. Presupuestos claros y metodología BIM. Cotiza por WhatsApp."
     />
     <link rel="canonical" href="https://cretoingenieria.com/" />
     <meta property="og:type" content="website" />
@@ -15,7 +19,7 @@
     <meta property="og:title" content="CRETO Ingeniería y Construcciones · Manizales" />
     <meta
       property="og:description"
-      content="Diseño, remodelación y obra civil en Manizales y el Eje Cafetero. Presupuestos claros, metodología BIM y equipo certificado."
+      content="Diseño, remodelación y obra civil en Manizales y el Eje Cafetero. Presupuestos claros y metodología BIM."
     />
     <meta property="og:url" content="https://cretoingenieria.com/" />
     <meta property="og:image" content="https://cretoingenieria.com/og-image.jpg" />
@@ -24,163 +28,126 @@
     <meta name="twitter:title" content="CRETO Ingeniería y Construcciones · Manizales" />
     <meta
       name="twitter:description"
-      content="Diseño, remodelación y obra civil en Manizales y el Eje Cafetero. Presupuestos claros, metodología BIM y equipo certificado."
+      content="Diseño, remodelación y obra civil en Manizales y el Eje Cafetero. Presupuestos claros y metodología BIM."
     />
     <meta name="twitter:image" content="https://cretoingenieria.com/og-image.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-    />
   </head>
   <body>
-    <header id="site-header" class="site-header"></header>
+    <header id="site-header" class="site-header"><!--ssr:header--></header>
 
     <main>
       <!-- HERO -->
-      <section class="hero">
-        <div class="container">
-          <div class="hero__grid">
-            <div>
-              <span class="badge-wa" id="hero-badge"></span>
-              <h1>Construimos con rigor.<br />Presupuestamos sin sorpresas.</h1>
-              <p>
-                Más de 32 años diseñando y ejecutando obra en el Eje Cafetero.
-                Diseño, remodelación y construcción con metodología BIM y un solo
-                responsable de principio a fin.
-              </p>
-              <div class="hero__cta" id="hero-cta"></div>
-            </div>
-            <div class="hero__media">
-              <img src="/proyectos/placeholder-2.svg" alt="Obra de CRETO Ingeniería y Construcciones" />
-              <div class="hero__badge">
-                <b>32+</b>
-                <span>años de trayectoria</span>
-              </div>
-            </div>
+      <section class="hero" aria-labelledby="hero-titulo">
+        <!--ssr:hero-media-->
+        <div class="container hero__inner">
+          <h1 id="hero-titulo" class="display hero__titulo">
+            <span class="line"><span style="--i: 0">Construimos con rigor.</span></span>
+            <span class="line"><span style="--i: 1">Presupuestamos sin sorpresas.</span></span>
+          </h1>
+          <p class="lead hero__lead" data-intro style="--i: 0">
+            Más de 32 años diseñando y ejecutando obra en el Eje Cafetero. Diseño, remodelación y construcción con
+            metodología BIM y un solo responsable de principio a fin.
+          </p>
+          <div class="hero__acciones" id="hero-cta" data-intro style="--i: 1"><!--ssr:hero-cta--></div>
+          <div class="hero__pie" data-intro style="--i: 2">
+            <span><b>Manizales, Caldas</b> · Obra en todo el Eje Cafetero</span>
+            <span><!--ssr:hero-horario--></span>
           </div>
         </div>
       </section>
 
-      <!-- AUTORIDAD -->
-      <section class="authority">
-        <div class="container section--tight">
-          <dl class="stats" id="home-stats" data-reveal></dl>
-          <div class="creds" id="home-creds" data-reveal style="transition-delay: 120ms"></div>
+      <!-- INTRO -->
+      <section class="section section--line">
+        <div class="container split">
+          <div data-reveal>
+            <h2 class="h2">Un solo responsable, de principio a fin</h2>
+            <p class="body">
+              CRETO es una empresa familiar de ingeniería y construcción con base en Manizales. Diseñamos,
+              presupuestamos y construimos bajo el mismo techo, así nadie diluye la responsabilidad entre
+              intermediarios.
+            </p>
+            <p class="body">
+              Atendemos desde un arreglo urgente hasta una obra completa, con el mismo estándar técnico para hogares y
+              para empresas.
+            </p>
+            <a href="/empresa.html" class="link-arrow" >Conoce la empresa <!--ssr:flecha--></a>
+          </div>
+          <!--ssr:intro-media-->
         </div>
       </section>
 
       <!-- SERVICIOS -->
-      <section class="section">
+      <section class="section section--line" aria-labelledby="srv-titulo">
         <div class="container">
-          <div class="section__head" data-reveal>
-            <span class="eyebrow">Qué hacemos</span>
-            <h2 class="h2">Cuatro líneas, un solo estándar</h2>
-            <p>
-              Del arreglo urgente a la obra completa. Elige la línea que
-              necesitas y escríbenos directo — te respondemos con un diagnóstico
-              claro.
+          <div class="head" data-reveal>
+            <h2 id="srv-titulo" class="h2">Cuatro líneas, un solo estándar</h2>
+            <p class="lead">
+              Del arreglo urgente a la obra completa. Elige la línea que necesitas y escríbenos directo: te respondemos
+              con un diagnóstico claro.
             </p>
           </div>
-          <div class="grid grid--4" id="home-services"></div>
+          <div class="srv" ><!--ssr:home-services--></div>
         </div>
       </section>
 
-      <!-- DIFERENCIADOR -->
-      <section class="section" style="border-block: 1px solid var(--concrete-200); background: var(--concrete-50)">
+      <!-- LA PROMESA -->
+      <section class="promesa" aria-labelledby="promesa-texto">
         <div class="container">
-          <div class="split">
-            <div data-reveal>
-              <span class="eyebrow">Por qué CRETO</span>
-              <h2 class="h2">El presupuesto que prometemos es el que pagas</h2>
-              <p style="margin-top: 1.25rem; color: var(--concrete-600)">
-                El mayor miedo al construir o remodelar es que la obra se
-                dispare. Nosotros lo resolvemos de raíz: presupuestamos con
-                metodología BIM 5D y un equipo certificado en costos, así
-                entregamos un desglose detallado desde el primer día.
-              </p>
-              <ul class="feature-list">
-                <li>
-                  <i></i>
-                  <div>
-                    <b>Diseño + obra integrados</b>
-                    <p>Un solo responsable de principio a fin, sin intermediarios que diluyan la responsabilidad.</p>
-                  </div>
-                </li>
-                <li>
-                  <i></i>
-                  <div>
-                    <b>Metodología BIM</b>
-                    <p>Coordinamos disciplinas y anticipamos interferencias antes de la obra, no durante.</p>
-                  </div>
-                </li>
-                <li>
-                  <i></i>
-                  <div>
-                    <b>Cumplimiento normativo</b>
-                    <p>NSR-10, RETIE y radicación ante operadores de red, respaldado por profesionales con tarjeta vigente.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="split__media" data-reveal style="transition-delay: 120ms">
-              <img src="/proyectos/placeholder-3.svg" alt="Metodología BIM de CRETO" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PORTAFOLIO -->
-      <section class="section">
-        <div class="container">
-          <div class="section__head flex-between" style="max-width: none" data-reveal>
-            <div style="max-width: 36rem">
-              <span class="eyebrow">Portafolio</span>
-              <h2 class="h2">Obra entregada, no promesas</h2>
-            </div>
-            <a href="/portafolio.html" class="btn btn-ghost">Ver portafolio completo →</a>
-          </div>
-          <div class="grid grid--3" id="home-portfolio"></div>
-        </div>
-      </section>
-
-      <!-- TESTIMONIOS -->
-      <section class="section" style="border-block: 1px solid var(--concrete-200); background: var(--concrete-50)">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <span class="eyebrow">Lo que dicen</span>
-            <h2 class="h2">Confianza construida en el Eje Cafetero</h2>
-          </div>
-          <div class="grid grid--3" id="home-testimonials"></div>
-          <p class="muted-note">* Testimonios de ejemplo — reemplazar por reseñas reales con autorización del cliente.</p>
-        </div>
-      </section>
-
-      <!-- GANCHO -->
-      <section class="section">
-        <div class="container">
-          <div class="magnet" data-reveal>
-            <div>
-              <span class="eyebrow">Guía gratuita</span>
-              <h2>7 errores que encarecen una remodelación (y cómo evitarlos)</h2>
+          <h2 id="promesa-texto" class="promesa__texto" data-promesa>El presupuesto que prometemos es el que pagas.</h2>
+          <div class="promesa__grid">
+            <div class="promesa__item" data-reveal>
+              <h3>Presupuesto BIM 5D</h3>
               <p>
-                Descarga nuestra guía práctica antes de empezar tu proyecto. Te
-                la enviamos por WhatsApp sin costo.
+                Sacamos cantidades y costos directamente del modelo del proyecto.
+                Recibes un desglose detallado desde el primer día.
               </p>
             </div>
-            <div class="magnet__action" id="home-magnet"></div>
+            <div class="promesa__item" data-reveal style="--d: 90ms">
+              <h3>Diseño y obra integrados</h3>
+              <p>Coordinamos todas las disciplinas y anticipamos interferencias antes de la obra, no durante.</p>
+            </div>
+            <div class="promesa__item" data-reveal style="--d: 180ms">
+              <h3>Cumplimiento normativo</h3>
+              <p>
+                Diseño sismorresistente según NSR-10 e instalaciones eléctricas según RETIE, en cada proyecto.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- CIERRE -->
-      <div id="home-cta"></div>
+      <!-- PROCESO -->
+      <section class="section" aria-labelledby="pasos-titulo">
+        <div class="container">
+          <div class="head" data-reveal>
+            <h2 id="pasos-titulo" class="h2">Así trabajamos</h2>
+            <p class="lead">Cuatro etapas, un mismo responsable. Sabes qué pasa en cada una y cuánto cuesta antes de empezar.</p>
+          </div>
+          <ol class="pasos" ><!--ssr:home-pasos--></ol>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section class="section section--line" aria-labelledby="proy-titulo">
+        <div class="container">
+          <div class="head" data-reveal>
+            <h2 id="proy-titulo" class="h2">Nuestro trabajo</h2>
+            <div>
+              <p class="lead">Una muestra de lo que hacemos en Manizales y el Eje Cafetero.</p>
+              <a href="/portafolio.html" class="link-arrow" style="margin-top: 1.5rem">Ver todo el portafolio</a>
+            </div>
+          </div>
+          <div class="proyectos" ><!--ssr:home-portfolio--></div>
+        </div>
+      </section>
+
+      <!--ssr:cta-->
     </main>
 
-    <footer id="site-footer" class="site-footer"></footer>
+    <footer id="site-footer" class="site-footer"><!--ssr:footer--></footer>
+    <!--ssr:chat-->
     <script type="module" src="/src/pages/home.ts"></script>
-    <!-- Datos estructurados (Google). Igual que en src/data/site.ts: teléfono y correo son de ejemplo, cámbialos cuando tengas los reales. -->
+    <!-- Datos estructurados (Google). Agrega "telephone" cuando tengas el número real. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -188,7 +155,6 @@
         "name": "CRETO Ingeniería y Construcciones",
         "url": "https://cretoingenieria.com/",
         "image": "https://cretoingenieria.com/og-image.jpg",
-        "telephone": "+573000000000",
         "email": "cretoingenieriayconstrucciones@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -196,8 +162,7 @@
           "addressRegion": "Caldas",
           "addressCountry": "CO"
         },
-        "areaServed": "Eje Cafetero",
-        "priceRange": "$$"
+        "areaServed": "Eje Cafetero"
       }
     </script>
   </body>

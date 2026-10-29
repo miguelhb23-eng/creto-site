@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0a" />
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>La Empresa · CRETO Ingeniería y Construcciones</title>
     <meta
       name="description"
-      content="CRETO — más de 32 años de trayectoria en Manizales. Empresa familiar con metodología BIM y un equipo certificado por ACIEM, Camacol, SENA y Autodesk."
+      content="CRETO — más de 32 años de trayectoria en Manizales. Empresa familiar de ingeniería y construcción con metodología BIM."
     />
     <link rel="canonical" href="https://cretoingenieria.com/empresa.html" />
     <meta property="og:type" content="website" />
@@ -15,7 +19,7 @@
     <meta property="og:title" content="La Empresa · CRETO Ingeniería y Construcciones" />
     <meta
       property="og:description"
-      content="Más de 32 años de trayectoria en Manizales. Empresa familiar con metodología BIM y un equipo certificado por ACIEM, Camacol, SENA y Autodesk."
+      content="Más de 32 años de trayectoria en Manizales. Empresa familiar de ingeniería y construcción con metodología BIM."
     />
     <meta property="og:url" content="https://cretoingenieria.com/empresa.html" />
     <meta property="og:image" content="https://cretoingenieria.com/og-image.jpg" />
@@ -24,110 +28,76 @@
     <meta name="twitter:title" content="La Empresa · CRETO Ingeniería y Construcciones" />
     <meta
       name="twitter:description"
-      content="Más de 32 años de trayectoria en Manizales. Empresa familiar con metodología BIM y un equipo certificado por ACIEM, Camacol, SENA y Autodesk."
+      content="Más de 32 años de trayectoria en Manizales. Empresa familiar de ingeniería y construcción con metodología BIM."
     />
     <meta name="twitter:image" content="https://cretoingenieria.com/og-image.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-    />
   </head>
   <body>
-    <header id="site-header" class="site-header"></header>
+    <header id="site-header" class="site-header"><!--ssr:header--></header>
     <main>
-      <div class="page-head">
-        <div class="container">
-          <span class="eyebrow">La Empresa</span>
-          <h1>Una firma familiar con estándar de ingeniería</h1>
-          <p>En CRETO buscamos llevar tu proyecto a otro nivel.</p>
+      <section class="hero hero--page" aria-labelledby="hero-titulo">
+        <!--ssr:hero-media-->
+        <div class="container hero__inner">
+          <h1 id="hero-titulo" class="h1 hero__titulo">
+            <span class="line"><span style="--i: 0">Una firma familiar</span></span>
+            <span class="line"><span style="--i: 1">con estándar de ingeniería</span></span>
+          </h1>
+          <p class="lead hero__lead" data-intro>Más de 32 años de obra en Manizales y el Eje Cafetero.</p>
         </div>
-      </div>
+      </section>
 
       <!-- Historia -->
       <section class="section">
-        <div class="container">
-          <div class="split">
-            <div data-reveal>
-              <h2 class="h2">Más de 32 años de obra</h2>
-              <p style="margin-top: 1.25rem; color: var(--concrete-600)">
-                CRETO es una empresa familiar de ingeniería y construcción con
-                base en Manizales, con más de tres décadas ejecutando proyectos
-                en el Eje Cafetero. Nacimos con una convicción simple: la
-                construcción se hace mejor cuando el diseño y la ejecución van de
-                la mano.
-              </p>
-              <p style="margin-top: 1rem; color: var(--concrete-600)">
-                Servimos principalmente a clientes del sector privado,
-                combinando la cercanía de una firma familiar con el rigor técnico
-                de una metodología estructurada. Cada proyecto se planifica, se
-                presupuesta y se controla con el mismo estándar, sin importar su
-                tamaño.
-              </p>
-            </div>
-            <div class="split__media" data-reveal style="transition-delay: 120ms">
-              <img src="/proyectos/placeholder-1.svg" alt="Trayectoria de CRETO" />
-            </div>
+        <div class="container split">
+          <div data-reveal>
+            <h2 class="h2">Diseño y obra van de la mano</h2>
+            <p class="body">
+              CRETO es una empresa familiar de ingeniería y construcción con base en Manizales, con más de tres décadas
+              ejecutando proyectos en el Eje Cafetero. Nacimos con una convicción simple: la construcción se hace mejor
+              cuando el diseño y la ejecución van de la mano.
+            </p>
+            <p class="body">
+              Servimos principalmente a clientes del sector privado, combinando la cercanía de una firma familiar con el
+              rigor técnico de una metodología estructurada. Cada proyecto se planifica, se presupuesta y se controla con
+              el mismo estándar, sin importar su tamaño.
+            </p>
           </div>
+          <!--ssr:empresa-media-->
         </div>
       </section>
 
       <!-- Metodología -->
-      <section class="section" style="border-block: 1px solid var(--concrete-200); background: var(--concrete-50)">
+      <section class="section section--ink section--line">
         <div class="container">
-          <div class="section__head" data-reveal>
-            <span class="eyebrow">Metodología</span>
+          <div class="head" data-reveal>
             <h2 class="h2">BIM en el centro de todo</h2>
-            <p>
-              Trabajamos con metodología BIM para coordinar disciplinas,
-              anticipar interferencias y presupuestar con precisión 5D. No es una
-              etiqueta: es la forma en que hacemos previsible cada obra.
+            <p class="lead">
+              Trabajamos con metodología BIM para coordinar disciplinas, anticipar interferencias y presupuestar con
+              precisión 5D. No es una etiqueta: es la forma en que hacemos previsible cada obra.
             </p>
           </div>
-          <div class="grid grid--3">
-            <div class="box" data-reveal><b>Diseño coordinado</b><p>Arquitectura, estructura e instalaciones en un solo modelo.</p></div>
-            <div class="box" data-reveal style="transition-delay:80ms"><b>Presupuesto 5D</b><p>Cantidades y costos derivados directamente del modelo.</p></div>
-            <div class="box" data-reveal style="transition-delay:160ms"><b>Control de obra</b><p>Seguimiento de avance contra lo planificado.</p></div>
+          <div class="metodo">
+            <div class="metodo__item" data-reveal>
+              <h3>Diseño coordinado</h3>
+              <p>Arquitectura, estructura e instalaciones en un solo modelo.</p>
+            </div>
+            <div class="metodo__item" data-reveal style="--d: 90ms">
+              <h3>Presupuesto 5D</h3>
+              <p>Cantidades y costos derivados directamente del modelo.</p>
+            </div>
+            <div class="metodo__item" data-reveal style="--d: 180ms">
+              <h3>Control de obra</h3>
+              <p>Seguimiento del avance contra lo planificado.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Equipo -->
-      <section class="section">
-        <div class="container">
-          <div class="section__head">
-            <span class="eyebrow">Equipo directivo</span>
-            <h2 class="h2">Personas certificadas detrás de cada obra</h2>
-          </div>
-          <div class="grid grid--3">
-            <div class="member" data-reveal>
-              <div class="member__avatar">N</div>
-              <h3>Nelson</h3>
-              <p class="member__role">Fundador y director</p>
-              <p>Modelador BIM certificado por Autodesk · Gestión de Proyectos (Camacol) · Costos y Presupuestos (SENA).</p>
-            </div>
-            <div class="member" data-reveal style="transition-delay:80ms">
-              <div class="member__avatar">M</div>
-              <h3>Miguel Betancur</h3>
-              <p class="member__role">Ing. electricista · Coordinador BIM</p>
-              <p>Tarjeta profesional vigente (ACIEM) · Coordinador BIM certificado por Autodesk.</p>
-            </div>
-            <div class="member" data-reveal style="transition-delay:160ms">
-              <div class="member__avatar">N</div>
-              <h3>Nicolás</h3>
-              <p class="member__role">Ingeniería de costos</p>
-              <p>Estudiante de ingeniería civil · Certificado en Costos y Presupuestos BIM (Autodesk).</p>
-            </div>
-          </div>
 
-          <div class="info-card" style="margin-top: 2.5rem" id="empresa-creds" data-reveal></div>
-        </div>
-      </section>
-
-      <div id="empresa-cta"></div>
+      <!--ssr:cta-->
     </main>
-    <footer id="site-footer" class="site-footer"></footer>
+    <footer id="site-footer" class="site-footer"><!--ssr:footer--></footer>
+    <!--ssr:chat-->
     <script type="module" src="/src/pages/empresa.ts"></script>
   </body>
 </html>

@@ -4,3 +4,9 @@ dist/
 .env
 .env.*
 .DS_Store
+
+# Archivos de trabajo del diseño (capturas, bocetos, servidor de decisiones)
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/
+*.zip

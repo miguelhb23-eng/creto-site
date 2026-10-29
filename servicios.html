@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0a" />
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>Servicios · CRETO Ingeniería y Construcciones</title>
     <meta
       name="description"
@@ -27,35 +31,30 @@
       content="Mantenimiento (Express), remodelaciones, obra civil (Construcciones) y diseño e ingeniería BIM. Cotiza cada línea por WhatsApp."
     />
     <meta name="twitter:image" content="https://cretoingenieria.com/og-image.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-    />
   </head>
   <body>
-    <header id="site-header" class="site-header"></header>
+    <header id="site-header" class="site-header"><!--ssr:header--></header>
     <main>
-      <div class="page-head">
-        <div class="container" data-reveal>
-          <span class="eyebrow">Servicios</span>
-          <h1>Del arreglo urgente a la obra completa</h1>
-          <p>
-            Cuatro líneas de servicio bajo un mismo estándar técnico. Cada una
-            resuelve una necesidad distinta, todas con el mismo rigor en diseño,
-            presupuesto y ejecución.
+      <section class="hero hero--page" aria-labelledby="hero-titulo">
+        <!--ssr:hero-media-->
+        <div class="container hero__inner">
+          <h1 id="hero-titulo" class="h1 hero__titulo">
+            <span class="line"><span style="--i: 0">Del arreglo urgente</span></span>
+            <span class="line"><span style="--i: 1">a la obra completa</span></span>
+          </h1>
+          <p class="lead hero__lead" data-intro>
+            Cuatro líneas de servicio bajo un mismo estándar técnico. Cada una resuelve una necesidad distinta, todas con
+            el mismo rigor en diseño, presupuesto y ejecución.
           </p>
         </div>
-      </div>
-
-      <section class="section">
-        <div class="container" id="servicios-list"></div>
       </section>
 
-      <div id="servicios-cta"></div>
+      <!--ssr:servicios-list-->
+
+      <!--ssr:cta-->
     </main>
-    <footer id="site-footer" class="site-footer"></footer>
+    <footer id="site-footer" class="site-footer"><!--ssr:footer--></footer>
+    <!--ssr:chat-->
     <script type="module" src="/src/pages/servicios.ts"></script>
   </body>
 </html>

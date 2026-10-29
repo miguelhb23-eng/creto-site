@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0a" />
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>Portafolio · CRETO Ingeniería y Construcciones</title>
     <meta
       name="description"
-      content="Proyectos de CRETO en Manizales y el Eje Cafetero: remodelaciones, obra nueva, diseño eléctrico e ingeniería BIM. Obra entregada con datos reales."
+      content="Portafolio de CRETO: remodelaciones, construcciones, ingeniería y mantenimiento en Manizales y el Eje Cafetero."
     />
     <link rel="canonical" href="https://cretoingenieria.com/portafolio.html" />
     <meta property="og:type" content="website" />
@@ -15,50 +19,42 @@
     <meta property="og:title" content="Portafolio · CRETO Ingeniería y Construcciones" />
     <meta
       property="og:description"
-      content="Proyectos de CRETO en Manizales y el Eje Cafetero: remodelaciones, obra nueva, diseño eléctrico e ingeniería BIM."
+      content="Remodelaciones, construcciones, ingeniería y mantenimiento en Manizales y el Eje Cafetero."
     />
     <meta property="og:url" content="https://cretoingenieria.com/portafolio.html" />
     <meta property="og:image" content="https://cretoingenieria.com/og-image.jpg" />
     <meta property="og:locale" content="es_CO" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Portafolio · CRETO Ingeniería y Construcciones" />
-    <meta
-      name="twitter:description"
-      content="Proyectos de CRETO en Manizales y el Eje Cafetero: remodelaciones, obra nueva, diseño eléctrico e ingeniería BIM."
-    />
     <meta name="twitter:image" content="https://cretoingenieria.com/og-image.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-    />
   </head>
   <body>
-    <header id="site-header" class="site-header"></header>
+    <header id="site-header" class="site-header"><!--ssr:header--></header>
     <main>
-      <div class="page-head">
-        <div class="container" data-reveal>
-          <span class="eyebrow">Portafolio</span>
-          <h1>Proyectos que hablan por nosotros</h1>
-          <p>
-            Una muestra de obra entregada en el Eje Cafetero. Filtra por tipo de
-            proyecto y explora los detalles de cada uno.
+      <section class="hero hero--page" aria-labelledby="hero-titulo">
+        <!--ssr:hero-media-->
+        <div class="container hero__inner">
+          <h1 id="hero-titulo" class="h1 hero__titulo">
+            <span class="line"><span style="--i: 0">Nuestro trabajo</span></span>
+          </h1>
+          <p class="lead hero__lead" data-intro>
+            Una muestra de obra en el Eje Cafetero. Filtra por tipo de proyecto y explora los detalles de cada uno.
           </p>
-        </div>
-      </div>
-
-      <section class="section">
-        <div class="container">
-          <div class="filters" id="filters" role="group" aria-label="Filtrar proyectos"></div>
-          <div class="grid grid--3" id="portfolio-grid"></div>
-          <p id="empty" class="text-center muted-note" hidden>No hay proyectos en esta categoría todavía.</p>
         </div>
       </section>
 
-      <div id="portfolio-cta"></div>
+      <section class="section" aria-labelledby="lista-titulo">
+        <div class="container">
+          <h2 id="lista-titulo" class="sr-only">Proyectos</h2>
+          <div class="filtros" id="filters" role="group" aria-label="Filtrar proyectos por tipo"><!--ssr:filters--></div>
+          <div class="proyectos" id="portfolio-grid"><!--ssr:portfolio-grid--></div>
+          <p id="empty" class="vacio" hidden>Todavía no hay proyectos publicados en esta categoría.</p>
+        </div>
+      </section>
+
+      <!--ssr:cta-->
     </main>
-    <footer id="site-footer" class="site-footer"></footer>
+    <footer id="site-footer" class="site-footer"><!--ssr:footer--></footer>
+    <!--ssr:chat-->
     <script type="module" src="/src/pages/portafolio.ts"></script>
   </body>
 </html>

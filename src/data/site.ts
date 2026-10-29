@@ -29,6 +29,60 @@ export const site = {
   web3formsKey: 'TU_ACCESS_KEY_AQUI', // ← CAMBIAR
 } as const;
 
+/** ¿Ya tiene la clave real? Si no, el formulario no se envía a ciegas. */
+export const formularioActivo = !site.web3formsKey.includes('TU_ACCESS_KEY');
+
+/**
+ * FOTOS del sitio.
+ * ─────────────────────────────────────────────────────────────
+ * Copia la foto en public/fotos/ y escribe aquí su ruta, por ejemplo
+ * '/fotos/hero.jpg'. Si una ruta queda vacía, el sitio muestra un dibujo
+ * técnico en su lugar. Recomendado: JPG horizontal de unos 2400 px de ancho.
+ */
+export const fotos: {
+  hero: string;
+  intro: string;
+  empresa: string;
+  cierre: string;
+  servicios: Record<string, string>;
+} = {
+  hero: '',
+  intro: '',
+  empresa: '',
+  cierre: '',
+  servicios: {
+    express: '',
+    remodelaciones: '',
+    construcciones: '',
+    ingenieria: '',
+  },
+};
+
+export interface Paso {
+  titulo: string;
+  texto: string;
+}
+
+/** Cómo trabajamos: la secuencia de un proyecto con CRETO. */
+export const pasos: Paso[] = [
+  {
+    titulo: 'Diagnóstico',
+    texto: 'Escuchamos qué necesitas y revisamos el sitio. Te decimos con honestidad qué conviene hacer.',
+  },
+  {
+    titulo: 'Diseño y presupuesto',
+    texto: 'Modelamos el proyecto con metodología BIM y sacamos cantidades y costos del modelo, ítem por ítem.',
+  },
+  {
+    titulo: 'Obra',
+    texto: 'Un solo responsable ejecuta y controla el avance contra lo planificado, con NSR-10 y RETIE.',
+  },
+  {
+    titulo: 'Entrega',
+    texto: 'Recibes la obra terminada por el valor que se cotizó, sin cobros sorpresa al final.',
+  },
+];
+
 /** Construye un enlace wa.me con mensaje pre-cargado. */
 export function whatsappLink(mensaje: string): string {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(mensaje)}`;
@@ -103,16 +157,4 @@ export const metricas: Metrica[] = [
   { valor: 'BIM', etiqueta: 'Metodología en cada proyecto' },
   { valor: '4', etiqueta: 'Líneas de servicio' },
   { valor: '100%', etiqueta: 'Eje Cafetero' },
-];
-
-export interface Credencial {
-  sigla: string;
-  detalle: string;
-}
-
-export const credenciales: Credencial[] = [
-  { sigla: 'ACIEM', detalle: 'Ing. electricista con tarjeta profesional vigente' },
-  { sigla: 'Camacol', detalle: 'Gestión de Proyectos' },
-  { sigla: 'SENA', detalle: 'Costos y Presupuestos' },
-  { sigla: 'Autodesk', detalle: 'Equipo certificado en BIM' },
 ];

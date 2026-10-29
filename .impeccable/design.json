@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T19:05:43.317Z",
+  "title": "Design System: CRETO Ingeniería y Construcciones",
+  "extensions": {
+    "colorMeta": {
+      "red": {
+        "role": "primary",
+        "displayName": "Signal Red",
+        "canonical": "#d81e2c",
+        "cssVar": "--red",
+        "tonalRamp": [
+          "#36080b",
+          "#6c0f16",
+          "#a21721",
+          "#d81e2c",
+          "#e25661",
+          "#ec8f96",
+          "#f5c7ca",
+          "#fbe9ea"
+        ],
+        "contrast": {
+          "on-red": 5.07,
+          "ink-0": 3.88
+        }
+      },
+      "red-hover": {
+        "role": "primary",
+        "displayName": "Lit Red",
+        "canonical": "#e8323f",
+        "cssVar": "--red-hover",
+        "tonalRamp": [
+          "#3a0d10",
+          "#741920",
+          "#ae262f",
+          "#e8323f",
+          "#ee656f",
+          "#f4999f",
+          "#f9cccf",
+          "#fdebec"
+        ],
+        "contrast": {
+          "on-red": 4.23
+        },
+        "note": "Hover only; white on it passes AA only for large text."
+      },
+      "ink-0": {
+        "role": "neutral",
+        "displayName": "Concrete Black",
+        "canonical": "#0b0b0a",
+        "cssVar": "--ink-0",
+        "tonalRamp": [
+          "#030303",
+          "#060605",
+          "#080808",
+          "#0b0b0a",
+          "#484847",
+          "#858585",
+          "#c2c2c2",
+          "#e7e7e7"
+        ]
+      },
+      "ink-1": {
+        "role": "neutral",
+        "displayName": "Shadow Concrete",
+        "canonical": "#131311",
+        "cssVar": "--ink-1",
+        "tonalRamp": [
+          "#050504",
+          "#0a0a09",
+          "#0e0e0d",
+          "#131311",
+          "#4e4e4d",
+          "#898988",
+          "#c4c4c4",
+          "#e7e7e7"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Form Concrete",
+        "canonical": "#1b1b19",
+        "cssVar": "--ink-2",
+        "tonalRamp": [
+          "#070706",
+          "#0e0e0d",
+          "#141413",
+          "#1b1b19",
+          "#545453",
+          "#8d8d8c",
+          "#c6c6c6",
+          "#e8e8e8"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Cured Concrete",
+        "canonical": "#262623",
+        "cssVar": "--ink-3",
+        "tonalRamp": [
+          "#0a0a09",
+          "#131312",
+          "#1d1d1a",
+          "#262623",
+          "#5c5c5a",
+          "#939391",
+          "#c9c9c8",
+          "#e9e9e9"
+        ],
+        "note": "Scrollbar thumb only; 1.30:1 on ink-0, never used for text."
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(244, 243, 239, 0.14)",
+        "cssVar": "--line",
+        "resolvedOnInk0": "#2c2b2a"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "rgba(244, 243, 239, 0.28)",
+        "cssVar": "--line-strong",
+        "resolvedOnInk0": "#4c4c4a"
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f4f3ef",
+        "cssVar": "--text",
+        "tonalRamp": [
+          "#3d3d3c",
+          "#7a7a78",
+          "#b7b6b3",
+          "#f4f3ef",
+          "#f7f6f3",
+          "#faf9f7",
+          "#fcfcfb",
+          "#fefefd"
+        ],
+        "contrast": {
+          "ink-0": 17.73,
+          "ink-1": 16.75
+        }
+      },
+      "text-2": {
+        "role": "neutral",
+        "displayName": "Dust",
+        "canonical": "#bdbbb3",
+        "cssVar": "--text-2",
+        "tonalRamp": [
+          "#2f2f2d",
+          "#5f5e5a",
+          "#8e8c86",
+          "#bdbbb3",
+          "#ceccc6",
+          "#deddd9",
+          "#efeeec",
+          "#f8f8f7"
+        ],
+        "contrast": {
+          "ink-0": 10.24,
+          "ink-1": 9.68
+        }
+      },
+      "text-3": {
+        "role": "neutral",
+        "displayName": "Ash",
+        "canonical": "#93918a",
+        "cssVar": "--text-3",
+        "tonalRamp": [
+          "#252423",
+          "#4a4945",
+          "#6e6d68",
+          "#93918a",
+          "#aeada7",
+          "#c9c8c5",
+          "#e4e4e2",
+          "#f4f4f3"
+        ],
+        "contrast": {
+          "ink-0": 6.24,
+          "ink-2": 5.47
+        },
+        "note": "Also the process numerals (01-04) and the muted CRETO brand word in service names."
+      },
+      "on-red": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "canonical": "#ffffff",
+        "cssVar": "--on-red-2",
+        "note": "All text on red, including secondary text (solid #fff, never translucent); white button fill.",
+        "contrast": {
+          "red": 5.07
+        }
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Alert Pink",
+        "canonical": "#ff6b74",
+        "tonalRamp": [
+          "#401b1d",
+          "#80363a",
+          "#bf5057",
+          "#ff6b74",
+          "#ff9097",
+          "#ffb5ba",
+          "#ffdadc",
+          "#fff0f1"
+        ],
+        "contrast": {
+          "ink-0": 7.13
+        }
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home hero headline only; uppercase, two masked lines, max 18ch.",
+        "fontStretch": "78%",
+        "textTransform": "uppercase"
+      },
+      "headline-lg": {
+        "displayName": "Headline Large (.h1)",
+        "purpose": "Interior page heroes, project title, 404.",
+        "fontStretch": "78%",
+        "textTransform": "uppercase"
+      },
+      "headline": {
+        "displayName": "Headline (.h2)",
+        "purpose": "Section headings, sentence case.",
+        "fontStretch": "78%"
+      },
+      "title": {
+        "displayName": "Title (.h3)",
+        "purpose": "Tertiary headings; project card titles in the same voice, \"Tipo · Lugar\" split onto two lines.",
+        "fontStretch": "78%"
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Promise items, process steps, method items, form title, spec-sheet values (1.375rem to 1.875rem).",
+        "fontStretch": "85%"
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Intro paragraph under headlines; text-2, max 38rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text; text-2, max 62ch; 1rem under 600px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, link-arrows, card links."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Notes, meta, footer lists, hero foot line."
+      }
+    },
+    "fontLoading": {
+      "display": "@fontsource-variable/archivo/wdth.css (self-hosted, width axis used via font-stretch)",
+      "text": "@fontsource-variable/hanken-grotesk/wght.css (self-hosted)"
+    },
+    "shadows": [
+      {
+        "name": "float-lift",
+        "value": "0 10px 30px -8px rgba(0, 0, 0, 0.7)",
+        "purpose": "WhatsApp float only; the system is otherwise flat."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(216, 30, 44, 0.28)",
+        "purpose": "Input focus, with red border."
+      }
+    ],
+    "overlays": [
+      {
+        "name": "hero-scrim",
+        "value": "linear-gradient(to top, rgba(11,11,10,0.97) 0%, rgba(11,11,10,0.72) 32%, rgba(11,11,10,0.2) 62%, rgba(11,11,10,0.55) 100%), linear-gradient(to right, rgba(11,11,10,0.7) 0%, rgba(11,11,10,0) 60%)",
+        "purpose": "Legibility over full-bleed hero media."
+      },
+      {
+        "name": "card-scrim",
+        "value": "linear-gradient(to top, rgba(11,11,10,0.97) 0%, rgba(11,11,10,0.86) 32%, rgba(11,11,10,0.25) 62%, rgba(11,11,10,0) 80%)",
+        "purpose": "Project card info over media."
+      },
+      {
+        "name": "header-glass",
+        "value": "background: rgba(11,11,10,0.86); backdrop-filter: saturate(140%) blur(14px)",
+        "purpose": "Header after 24px scroll or with menu open."
+      },
+      {
+        "name": "plano-ground",
+        "value": "radial-gradient(120% 90% at 70% 30%, #1d1d1a 0%, #131311 55%, #0b0b0a 100%)",
+        "purpose": "Background of line-drawing placeholders."
+      },
+      {
+        "name": "closing-media-blend",
+        "value": "position: absolute; right: 0; width: 46%; mix-blend-mode: multiply; opacity: 0.55; drawing lines rgba(11,11,10,0.55), accent line #fff",
+        "purpose": "Closing CTA red field: media sits on the right, multiplied into the red; no gradient."
+      },
+      {
+        "name": "closing-media-blend",
+        "value": "position: absolute; right: 0; width: 46%; mix-blend-mode: multiply; opacity: 0.55; drawing lines rgba(11,11,10,0.55), accent line #fff",
+        "purpose": "Closing CTA red field: media sits on the right, multiplied into the red; no gradient."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for all transitions and reveals."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Mobile menu clip-path wipe."
+      },
+      {
+        "name": "state-fast",
+        "value": "0.25s",
+        "purpose": "Button, link, nav color/border changes."
+      },
+      {
+        "name": "underline-scale",
+        "value": "0.45s",
+        "purpose": "Nav underline scaleX (filters 0.4s)."
+      },
+      {
+        "name": "menu-wipe",
+        "value": "0.5s",
+        "purpose": "Mobile menu clip-path from top."
+      },
+      {
+        "name": "row-sweep",
+        "value": "0.55s",
+        "purpose": "Service row red field scaleY from bottom."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 1s, transform 1.1s; translateY(28px) to 0",
+        "purpose": "[data-reveal] blocks via IntersectionObserver (threshold 0.12, rootMargin 0 0 -8% 0); stagger via --d (70-180ms steps)."
+      },
+      {
+        "name": "hero-line",
+        "value": "1.15s; translateY(105%) to 0; delay 0.15s + i*0.12s",
+        "purpose": "Masked hero headline lines on load."
+      },
+      {
+        "name": "hero-intro",
+        "value": "1s; translateY(16px) + fade; delay 0.55s + i*0.1s",
+        "purpose": "Hero lead, actions, foot line."
+      },
+      {
+        "name": "hero-zoom",
+        "value": "2.4s; scale(1.06) to 1",
+        "purpose": "Hero photo settle."
+      },
+      {
+        "name": "step-rule",
+        "value": "1.2s; width 0 to 100%; delay 0.2s + --d",
+        "purpose": "Red rule over each process step."
+      },
+      {
+        "name": "card-zoom",
+        "value": "1.2s; scale(1.035)",
+        "purpose": "Project card media on hover."
+      },
+      {
+        "name": "plano-trace",
+        "value": "2.6s dashoffset 3000 to 0; soft +0.35s; red +0.9s over 1.6s",
+        "purpose": "Line-drawing placeholders trace on reveal."
+      },
+      {
+        "name": "promise-words",
+        "value": "0.5s color; rgba(255,255,255,0.42) to #fff",
+        "purpose": "Scroll-linked word illumination from 92% viewport to block centre at 45%."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations 0.01ms, delays 0",
+        "purpose": "Final states shown, drawings fully traced, word split skipped, smooth scroll off. Start states scoped to html.js, added by an inline <head> script in every HTML entry (initLayout() re-adds it), so no-JS renders fully visible."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "lg",
+        "value": "1080px",
+        "purpose": "4-col grids to 2; 3-col footer (1.4fr 0.8fr 1.2fr) to 2 cols; spec sheet 3 cols."
+      },
+      {
+        "name": "md",
+        "value": "900px",
+        "purpose": "Nav to full-screen menu; header 68px; splits, heads, contact, prose, service rows stack; cards full width."
+      },
+      {
+        "name": "sm",
+        "value": "600px",
+        "purpose": "Most grids single column (footer stays 2 cols, brand spans both); hero/closing buttons full width; padding cleared for WhatsApp float; body 1rem."
+      }
+    ],
+    "layoutNotes": {
+      "heroHome": "max(640px, 100svh)",
+      "heroInner": "max(460px, 58svh)",
+      "closingPadding": "clamp(6rem, 12vw, 10rem)",
+      "whatsappFloat": "Hidden on contacto (body.page-contacto) and while the mobile menu is open."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary-lg",
+      "description": "Red whole-field action; every 'Cotiza por WhatsApp' uses it.",
+      "html": "<a class=\"ds-btn ds-btn-red\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"M3 21l1.65-4.8A8.5 8.5 0 1 1 7.8 19.4L3 21z\"/></svg>Cotiza por WhatsApp</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 3.75rem; padding: 0 1.9rem; border: 1px solid transparent; border-radius: 4px; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; font-weight: 650; font-size: 1.0625rem; letter-spacing: 0.005em; white-space: nowrap; text-decoration: none; cursor: pointer; transition: background-color 0.25s cubic-bezier(0.16,1,0.3,1), border-color 0.25s cubic-bezier(0.16,1,0.3,1), color 0.25s cubic-bezier(0.16,1,0.3,1), transform 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 2px solid #d81e2c; outline-offset: 3px; } .ds-btn-red { background: #d81e2c; color: #fff; } .ds-btn-red:hover { background: #e8323f; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action beside the red button (e.g. 'Dejar mis datos').",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Dejar mis datos</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 3.25rem; padding: 0 1.5rem; border: 1px solid rgba(244,243,239,0.28); border-radius: 4px; background: transparent; color: #f4f3ef; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; font-weight: 650; font-size: 1rem; text-decoration: none; transition: border-color 0.25s cubic-bezier(0.16,1,0.3,1), background-color 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-btn-ghost:hover { border-color: #f4f3ef; background: rgba(244,243,239,0.06); } .ds-btn-ghost:focus-visible { outline: 2px solid #d81e2c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Link Arrow",
+      "kind": "custom",
+      "description": "Text link with arrow; hairline underline turns red and gap widens on hover.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\">Ver proyectos <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-link-arrow { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; font-weight: 650; color: #f4f3ef; text-decoration: none; border-bottom: 1px solid rgba(244,243,239,0.28); padding-bottom: 0.25rem; transition: border-color 0.25s cubic-bezier(0.16,1,0.3,1), gap 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-link-arrow:hover { border-color: #d81e2c; gap: 0.8rem; } .ds-link-arrow:focus-visible { outline: 2px solid #d81e2c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "description": "Header nav; red 2px underline scales in from the left on hover/active.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link is-active\" href=\"#\">Servicios</a><a class=\"ds-nav-link\" href=\"#\">Portafolio</a><a class=\"ds-nav-link\" href=\"#\">Contacto</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2.25rem; background: #0b0b0a; padding: 1rem; } .ds-nav-link { position: relative; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; font-size: 0.9688rem; font-weight: 550; color: #bdbbb3; text-decoration: none; padding-block: 0.5rem; transition: color 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: #d81e2c; transform: scaleX(0); transform-origin: right; transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); } .ds-nav-link:hover, .ds-nav-link.is-active { color: #f4f3ef; } .ds-nav-link:hover::after, .ds-nav-link.is-active::after { transform: scaleX(1); transform-origin: left; } .ds-nav-link:focus-visible { outline: 2px solid #d81e2c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Ink field with strong hairline; red border and halo on focus.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-n\">Nombre <span>(obligatorio)</span></label><input id=\"ds-n\" placeholder=\"Tu nombre\" /></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 0.5rem; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; color: #f4f3ef; background: #131311; padding: 1.5rem; } .ds-field label { font-size: 0.9375rem; font-weight: 600; } .ds-field label span { font-weight: 450; color: #93918a; } .ds-field input { font: inherit; color: #f4f3ef; background: #0b0b0a; border: 1px solid rgba(244,243,239,0.28); border-radius: 4px; padding: 0.85rem 1rem; transition: border-color 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-field input::placeholder { color: #93918a; } .ds-field input:focus { outline: none; border-color: #d81e2c; box-shadow: 0 0 0 3px rgba(216,30,44,0.28); } .ds-field input:user-invalid { border-color: #ff6b74; }"
+    },
+    {
+      "name": "Portfolio Filter",
+      "kind": "chip",
+      "description": "Text-button filters over a hairline (not pills); active gets red underline.",
+      "html": "<div class=\"ds-filtros\"><button class=\"ds-filtro is-active\" aria-pressed=\"true\">Todos</button><button class=\"ds-filtro\" aria-pressed=\"false\">Remodelaciones</button><button class=\"ds-filtro\" aria-pressed=\"false\">Ingeniería</button></div>",
+      "css": ".ds-filtros { display: flex; flex-wrap: wrap; gap: 0.25rem 2rem; border-bottom: 1px solid rgba(244,243,239,0.14); background: #0b0b0a; padding: 0 1rem; } .ds-filtro { position: relative; background: none; border: 0; padding: 0.9rem 0; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; font-size: 1rem; font-weight: 600; color: #93918a; cursor: pointer; transition: color 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-filtro::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: #d81e2c; transform: scaleX(0); transition: transform 0.4s cubic-bezier(0.16,1,0.3,1); } .ds-filtro:hover, .ds-filtro.is-active { color: #f4f3ef; } .ds-filtro.is-active::after { transform: scaleX(1); } .ds-filtro:focus-visible { outline: 2px solid #d81e2c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "description": "Full-bleed media card; info over bottom gradient; \"Tipo · Lugar\" title on two lines; example tag when not real work.",
+      "html": "<a class=\"ds-pcard\" href=\"#\"><div class=\"ds-pcard-media\"></div><div class=\"ds-pcard-info\"><p class=\"ds-pcard-meta\">Remodelaciones · Manizales · 2024 <span class=\"ds-tag\">Ejemplo</span></p><h3 class=\"ds-pcard-title\">Remodelación integral<br />Manizales</h3><span class=\"ds-pcard-link\">Ver proyecto &rarr;</span></div></a>",
+      "css": ".ds-pcard { position: relative; display: block; min-height: 380px; overflow: hidden; border-radius: 4px; isolation: isolate; color: #f4f3ef; text-decoration: none; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; } .ds-pcard-media { position: absolute; inset: 0; z-index: -2; background: radial-gradient(120% 90% at 70% 30%, #1d1d1a 0%, #131311 55%, #0b0b0a 100%); transition: transform 1.2s cubic-bezier(0.16,1,0.3,1); } .ds-pcard:hover .ds-pcard-media { transform: scale(1.035); } .ds-pcard::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, rgba(11,11,10,0.97) 0%, rgba(11,11,10,0.86) 32%, rgba(11,11,10,0.25) 62%, rgba(11,11,10,0) 80%); } .ds-pcard-info { position: absolute; left: 0; right: 0; bottom: 0; padding: 2rem; } .ds-pcard-meta { margin: 0; font-size: 0.9375rem; color: #bdbbb3; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.75rem; } .ds-tag { display: inline-block; padding: 0.1rem 0.5rem; border: 1px solid rgba(244,243,239,0.28); border-radius: 2px; font-size: 0.8125rem; color: #bdbbb3; } .ds-pcard-title { margin: 0.75rem 0 0; font-family: 'Archivo Variable', 'Archivo', system-ui, sans-serif; font-stretch: 78%; font-weight: 800; font-size: 2.25rem; line-height: 0.98; letter-spacing: -0.015em; max-width: 22ch; } .ds-pcard-link { margin-top: 1.25rem; display: inline-flex; gap: 0.5rem; font-weight: 650; border-bottom: 1px solid rgba(244,243,239,0.28); padding-bottom: 0.25rem; transition: gap 0.35s cubic-bezier(0.16,1,0.3,1), border-color 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-pcard:hover .ds-pcard-link { gap: 0.85rem; border-color: #d81e2c; } .ds-pcard:focus-visible { outline: 2px solid #d81e2c; outline-offset: 3px; }"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "description": "Signature: hairline row with inline \"CRETO NAME\" (brand word muted); red field sweeps up on hover/focus-within, brand word and text turn white, chip flips white.",
+      "html": "<div class=\"ds-srv\"><h3 class=\"ds-srv-name\"><span class=\"ds-srv-marca\">CRETO</span> Remodelaciones</h3><p class=\"ds-srv-text\">Renovamos espacios con diseño, presupuesto cerrado y obra limpia.</p><a class=\"ds-srv-cta\" href=\"#\">Cotizar</a></div>",
+      "css": ".ds-srv { position: relative; display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,1fr) auto; gap: 1rem 3rem; align-items: center; padding: 2.25rem 1.5rem; border-block: 1px solid rgba(244,243,239,0.14); background: #0b0b0a; color: #f4f3ef; isolation: isolate; overflow: hidden; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; } .ds-srv::before { content: ''; position: absolute; inset: 0; z-index: -1; background: #d81e2c; transform: scaleY(0); transform-origin: bottom; transition: transform 0.55s cubic-bezier(0.16,1,0.3,1); } .ds-srv:hover::before, .ds-srv:focus-within::before { transform: scaleY(1); } .ds-srv-name { margin: 0; font-family: 'Archivo Variable', 'Archivo', system-ui, sans-serif; font-stretch: 78%; font-weight: 800; font-size: 3rem; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; } .ds-srv-marca { color: #93918a; transition: color 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-srv-text { margin: 0; color: #bdbbb3; transition: color 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-srv:hover .ds-srv-text, .ds-srv:hover .ds-srv-marca, .ds-srv:focus-within .ds-srv-text, .ds-srv:focus-within .ds-srv-marca { color: #fff; } .ds-srv-cta { display: inline-flex; align-items: center; height: 3.25rem; padding: 0 1.4rem; border: 1px solid rgba(244,243,239,0.28); border-radius: 4px; color: inherit; font-weight: 650; text-decoration: none; transition: border-color 0.3s cubic-bezier(0.16,1,0.3,1), background-color 0.3s cubic-bezier(0.16,1,0.3,1), color 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-srv:hover .ds-srv-cta, .ds-srv:focus-within .ds-srv-cta { background: #fff; border-color: #fff; color: #0b0b0a; } .ds-srv-cta:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Promise Field",
+      "kind": "custom",
+      "refersTo": "promise-field",
+      "description": "Signature: whole red band with giant condensed promise; words light up on scroll (shown here half lit).",
+      "html": "<section class=\"ds-promesa\"><h2 class=\"ds-promesa-text\"><span class=\"on\">El presupuesto que</span> <span>prometemos es el que pagas.</span></h2></section>",
+      "css": ".ds-promesa { background: #d81e2c; color: #fff; padding: 4rem 2rem; } .ds-promesa-text { margin: 0; font-family: 'Archivo Variable', 'Archivo', system-ui, sans-serif; font-stretch: 78%; font-weight: 800; font-size: 4rem; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; max-width: 16ch; text-wrap: balance; } .ds-promesa-text span { color: rgba(255,255,255,0.42); transition: color 0.5s cubic-bezier(0.16,1,0.3,1); } .ds-promesa-text span.on { color: #fff; }"
+    },
+    {
+      "name": "Closing CTA Field",
+      "kind": "custom",
+      "refersTo": "closing-field",
+      "description": "Full red closing band, white text, white primary and white-outline ghost buttons; media multiplied on the right 46%.",
+      "html": "<section class=\"ds-cierre\"><div class=\"ds-cierre-media\"></div><h2 class=\"ds-cierre-title\">¿Tienes un proyecto en mente?</h2><p class=\"ds-cierre-text\">Cuéntanos qué necesitas. Te entregamos un presupuesto claro, sin sorpresas.</p><div class=\"ds-cierre-actions\"><a class=\"ds-cbtn ds-cbtn-white\" href=\"#\">Cotiza por WhatsApp</a><a class=\"ds-cbtn ds-cbtn-ghost\" href=\"#\">Dejar mis datos</a></div></section>",
+      "css": ".ds-cierre { position: relative; isolation: isolate; overflow: hidden; background: #d81e2c; color: #fff; padding: 4rem 2rem; font-family: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, sans-serif; } .ds-cierre-media { position: absolute; inset: 0 0 0 auto; width: 46%; z-index: -1; mix-blend-mode: multiply; opacity: 0.55; background: repeating-linear-gradient(90deg, rgba(11,11,10,0.55) 0 2px, transparent 2px 80px); } .ds-cierre-title { margin: 0; font-family: 'Archivo Variable', 'Archivo', system-ui, sans-serif; font-stretch: 78%; font-weight: 800; font-size: 3.5rem; line-height: 0.94; letter-spacing: -0.02em; text-transform: uppercase; max-width: 13ch; text-wrap: balance; } .ds-cierre-text { margin: 1.75rem 0 0; max-width: 34rem; font-size: 1.125rem; color: #fff; } .ds-cierre-actions { margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 1rem; } .ds-cbtn { display: inline-flex; align-items: center; min-height: 3.75rem; padding: 0 1.9rem; border: 1px solid transparent; border-radius: 4px; font-weight: 650; font-size: 1.0625rem; text-decoration: none; transition: background-color 0.25s cubic-bezier(0.16,1,0.3,1), border-color 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-cbtn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; } .ds-cbtn-white { background: #fff; color: #0b0b0a; } .ds-cbtn-white:hover { background: #f4f3ef; } .ds-cbtn-ghost { border-color: rgba(255,255,255,0.7); color: #fff; } .ds-cbtn-ghost:hover { border-color: #fff; background: rgba(255,255,255,0.1); }"
+    },
+    {
+      "name": "WhatsApp Float",
+      "kind": "button",
+      "refersTo": "whatsapp-float",
+      "description": "Fixed red circle bottom-right; the only shadow in the system.",
+      "html": "<a class=\"ds-wa\" href=\"#\" aria-label=\"Escríbenos por WhatsApp\"><svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"M3 21l1.65-4.8A8.5 8.5 0 1 1 7.8 19.4L3 21z\"/></svg></a>",
+      "css": ".ds-wa { width: 3.5rem; height: 3.5rem; display: grid; place-items: center; border-radius: 50%; background: #d81e2c; color: #fff; box-shadow: 0 10px 30px -8px rgba(0,0,0,0.7); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), background-color 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-wa:hover { transform: scale(1.06); background: #e8323f; } .ds-wa:focus-visible { outline: 2px solid #d81e2c; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Concrete Ledger",
+    "overview": "This is a corporate builder site at full scale: a concrete-black ground, warm off-white type, and the brand red used as whole fields rather than as sprinkled accents. The professional benchmark is conconcreto.com. It plays the category standard straight and with full craft, and it refuses the light SaaS template: no pill badges, no eyebrow kickers, no card grids of icon plus title. Hierarchy comes from scale. Huge condensed uppercase display lines carry the claims, a quiet humanist grotesk carries the explanations, and thin hairline rules divide everything. There are no boxes or shadows.\n\nThe red is reserved for moments of commitment: the budget promise band, the closing call-to-action band, the primary \"Cotiza por WhatsApp\" action, the sweep behind a service row on hover, the progress rule on each process step, and the active underline in navigation. Everything else stays in three tones of black and three tones of off-white. Imagery runs full-bleed, edge to edge, under dark gradients; on the red closing band it is instead multiplied into the red on the right side. Until real photographs exist, each photo slot draws a technical line drawing (elevation, section, floor plan or hillside retaining wall) that traces itself onto the screen. These drawings are honest stand-ins and must not be read as fake photos.\n\nMotion is confident and slow: long out-expo easings, masked line reveals on page load, blocks that rise into view, and one signature interaction, the budget promise lighting up word by word as you scroll across the red field. All content is visible without JavaScript and under reduced motion.",
+    "keyCharacteristics": [
+      "Dark ground (`ink-0`) with three tonal steps for surfaces; no shadows except on the floating WhatsApp button.",
+      "Brand red appears as whole fields and full-height sweeps, never as decorative tints.",
+      "Archivo condensed (width 78%) at weight 800, uppercase for display and hero; Hanken Grotesk for all text.",
+      "Hairline rules (`line`, `line-strong`) structure lists, rows, steps and footers instead of cards.",
+      "Corners are almost square (4px); the only round element is the WhatsApp float.",
+      "Line-drawing placeholders that trace on reveal, swapped for photos by editing `src/data/site.ts`."
+    ],
+    "rules": [
+      {
+        "name": "The Whole-Field Rule",
+        "body": "Red is applied as a complete surface: a full section band (promise, closing CTA), a full button, a full-height row sweep, a 2px rule at full width. Red text on black, red-tinted cards and red gradients are not part of the system.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three-Tone Ground Rule",
+        "body": "Depth comes from moving one step along `ink-0` → `ink-1` → `ink-2`, never from shadows or lighter greys.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Archivo is always condensed (78% or 85%) and heavy (750–800). Hanken Grotesk is always the reading voice. Archivo is never set at regular width or weight, and Hanken Grotesk is never used for display.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Kicker Rule",
+        "body": "Headings stand alone. There are no small uppercase eyebrow labels above them. The only brand-word device is \"CRETO\" inside service names (inline and muted in rows, a block line on service pages), and it is part of the name itself.",
+        "section": "typography"
+      },
+      {
+        "name": "The Gradient-Not-Shadow Rule",
+        "body": "Legibility over imagery comes from ink gradients (or, on red, from a multiplied image kept to one side), never from boxes, shadows or text-shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use `red` as a whole surface (a band, a button, a full-height sweep or a 2px full-width rule) and keep it for commitment moments and the WhatsApp action.",
+      "Do set display type in Archivo at `font-stretch: 78%`, weight 800, line-height 0.94, -0.02em tracking, uppercase for hero, closing and promise lines, and balance-wrapped with a `ch` max width.",
+      "Do divide content with 1px hairlines (`line`, `line-strong`) and tone shifts (`ink-0` to `ink-1`) instead of cards and shadows.",
+      "Do run imagery full-bleed under ink gradients (on the red closing band, multiplied on the right instead), and route every photo through `mediaHTML()` so empty slots fall back to the traced line drawing.",
+      "Do add real photos by copying them into `public/fotos/` and writing their paths in the `fotos` object in `src/data/site.ts` (horizontal JPG, about 2400px wide).",
+      "Do mark every example project with `ejemplo: true` so it shows the `Ejemplo` / `Proyecto de ejemplo` tag.",
+      "Do scope animation start states under `html.js` and honor `prefers-reduced-motion`.",
+      "Do keep a 4px radius on interactive and media elements and a 2px red focus outline at a 3px offset."
+    ],
+    "donts": [
+      "Don't put eyebrow kickers or small uppercase labels above headings.",
+      "Don't use pill badges or grids of icon plus title cards; the light SaaS template is the confirmed anti-reference.",
+      "Don't show invented testimonials, reviews, projects or team data as real, and don't add new figures or claims beyond those already on the site.",
+      "Don't show certifications or credentials (no credential strips, credential lists or \"respaldado por\" columns) unless the client re-approves them.",
+      "Don't use red as text on black, as a tint or as a gradient.",
+      "Don't add drop shadows; the WhatsApp float is the single exception.",
+      "Don't set Archivo at normal width or regular weight, or use Hanken Grotesk for display.",
+      "Don't put resting text on `red-hover`; white on it is 4.23:1 and is only used for hover."
+    ]
+  }
+}

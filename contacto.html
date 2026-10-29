@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0a" />
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>Contacto · CRETO Ingeniería y Construcciones</title>
     <meta
       name="description"
@@ -27,106 +31,74 @@
       content="Contacta a CRETO en Manizales. Escríbenos por WhatsApp o déjanos tus datos y te respondemos rápido con un presupuesto claro."
     />
     <meta name="twitter:image" content="https://cretoingenieria.com/og-image.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-    />
   </head>
-  <body>
-    <header id="site-header" class="site-header"></header>
+  <body class="page-contacto">
+    <header id="site-header" class="site-header"><!--ssr:header--></header>
     <main>
-      <div class="page-head">
-        <div class="container" data-reveal>
-          <span class="eyebrow">Contacto</span>
-          <h1>Cuéntanos tu proyecto</h1>
-          <p>
-            El primer paso es una conversación. Escríbenos por WhatsApp para una
-            respuesta inmediata, o déjanos tus datos y nosotros te contactamos.
-          </p>
-        </div>
-      </div>
-
-      <section class="container">
-        <div class="contact-grid">
-          <!-- Formulario -->
+      <section class="section" style="padding-top: calc(var(--header-h) + clamp(3rem, 8vw, 6rem))" aria-labelledby="hero-titulo">
+        <div class="container contacto">
           <div data-reveal>
-            <h2 class="h2">Déjanos tus datos</h2>
-            <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--concrete-600)">
-              Solo lo esencial para poder contactarte. Sin compromiso.
+            <h1 id="hero-titulo" class="h1">Cuéntanos tu proyecto</h1>
+            <p class="lead" style="margin-top: 1.75rem">
+              El primer paso es una conversación. Escríbenos por WhatsApp para una respuesta inmediata, o déjanos tus
+              datos y nosotros te contactamos.
             </p>
-
-            <!--
-              Formulario vía Web3Forms (gratis, sin backend).
-              La access key se toma de src/data/site.ts (web3formsKey).
-            -->
-            <form action="https://api.web3forms.com/submit" method="POST" class="form">
-              <input type="hidden" name="access_key" id="w3f-key" value="" />
-              <input type="hidden" name="subject" value="Nuevo contacto desde la web de CRETO" />
-              <input type="hidden" name="from_name" value="Web CRETO" />
-              <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" autocomplete="off" />
-
-              <div class="form__row">
-                <div class="field">
-                  <label for="nombre">Nombre</label>
-                  <input id="nombre" name="nombre" type="text" required />
-                </div>
-                <div class="field">
-                  <label for="telefono">WhatsApp / Teléfono</label>
-                  <input id="telefono" name="telefono" type="tel" required />
-                </div>
-              </div>
-
-              <div class="form__row">
-                <div class="field">
-                  <label for="perfil">Soy…</label>
-                  <select id="perfil" name="perfil">
-                    <option>Cliente particular</option>
-                    <option>Empresa / entidad</option>
-                    <option>Constructora aliada</option>
-                  </select>
-                </div>
-                <div class="field">
-                  <label for="tipo">Tipo de proyecto</label>
-                  <select id="tipo" name="tipo">
-                    <option>Remodelación</option>
-                    <option>Construcción / obra nueva</option>
-                    <option>Diseño / ingeniería</option>
-                    <option>Mantenimiento (Express)</option>
-                    <option>Otro</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field">
-                <label for="mensaje">Cuéntanos brevemente <span style="color: var(--concrete-400)">(opcional)</span></label>
-                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-cta btn--lg">Enviar solicitud</button>
-            </form>
+            <div class="canales" id="contacto-canales"><!--ssr:canales--></div>
           </div>
 
-          <!-- Info lateral -->
-          <aside data-reveal style="transition-delay: 100ms">
-            <div class="info-card info-card--wa">
-              <span class="eyebrow" style="color: var(--wa-dark)">Respuesta inmediata</span>
-              <p style="font-size: 0.875rem; color: var(--concrete-700)">
-                La forma más rápida de empezar. Te respondemos en minutos en horario laboral.
-              </p>
-              <div id="contacto-wa" style="margin-top: 1rem"></div>
+          <!-- Formulario vía Web3Forms (gratis, sin backend). La clave sale de src/data/site.ts (web3formsKey). -->
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" id="form" data-reveal style="--d: 120ms">
+            <div id="form-aviso"></div>
+            <h2 class="form__titulo">Déjanos tus datos</h2>
+            <p class="form__intro">Solo lo esencial para poder contactarte. Sin compromiso.</p>
+
+            <input type="hidden" name="access_key" id="w3f-key" value="<!--ssr:w3f-key-->" />
+            <input type="hidden" name="subject" value="Nuevo contacto desde la web de CRETO" />
+            <input type="hidden" name="from_name" value="Web CRETO" />
+            <input type="hidden" name="redirect" value="https://cretoingenieria.com/contacto.html?enviado=1" />
+            <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" autocomplete="off" />
+
+            <div class="form__grid">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="telefono">WhatsApp o teléfono</label>
+                <input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="300 123 4567" required />
+              </div>
+              <div class="field">
+                <label for="perfil">Soy</label>
+                <select id="perfil" name="perfil">
+                  <option>Persona o familia</option>
+                  <option>Empresa o entidad</option>
+                  <option>Constructora que busca un aliado</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="tipo">Tipo de proyecto</label>
+                <select id="tipo" name="tipo">
+                  <option>Remodelación</option>
+                  <option>Construcción u obra nueva</option>
+                  <option>Diseño o ingeniería</option>
+                  <option>Mantenimiento (Express)</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="mensaje">Cuéntanos brevemente <span>(opcional)</span></label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+              </div>
             </div>
 
-            <div class="info-card">
-              <span class="eyebrow">Datos</span>
-              <dl id="contacto-datos" style="margin-top: 1rem"></dl>
-            </div>
-          </aside>
+            <button type="submit" class="btn btn--red btn--lg form__enviar" id="form-btn">Enviar solicitud</button>
+            <p class="form__nota">Te contactamos por WhatsApp o llamada en horario laboral.</p>
+          </form>
         </div>
       </section>
     </main>
-    <footer id="site-footer" class="site-footer"></footer>
+    <footer id="site-footer" class="site-footer"><!--ssr:footer--></footer>
+    <!--ssr:chat-->
     <script type="module" src="/src/pages/contacto.ts"></script>
   </body>
 </html>

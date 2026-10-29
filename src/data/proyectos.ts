@@ -26,6 +26,8 @@ export interface Proyecto {
   portada: string;
   galeria: string[];
   destacado: boolean;
+  /** true mientras el proyecto sea de muestra: se marca como "Ejemplo" en el sitio. */
+  ejemplo?: boolean;
   orden: number;
   contenido: Seccion[];
 }
@@ -52,6 +54,7 @@ export const proyectos: Proyecto[] = [
     portada: '/proyectos/placeholder-1.svg',
     galeria: ['/proyectos/placeholder-1.svg', '/proyectos/placeholder-2.svg', '/proyectos/placeholder-3.svg'],
     destacado: true,
+    ejemplo: true,
     orden: 1,
     contenido: [
       {
@@ -85,6 +88,7 @@ export const proyectos: Proyecto[] = [
     portada: '/proyectos/placeholder-2.svg',
     galeria: ['/proyectos/placeholder-2.svg', '/proyectos/placeholder-1.svg', '/proyectos/placeholder-3.svg'],
     destacado: true,
+    ejemplo: true,
     orden: 2,
     contenido: [
       {
@@ -118,6 +122,7 @@ export const proyectos: Proyecto[] = [
     portada: '/proyectos/placeholder-3.svg',
     galeria: ['/proyectos/placeholder-3.svg', '/proyectos/placeholder-1.svg'],
     destacado: true,
+    ejemplo: true,
     orden: 3,
     contenido: [
       {
@@ -151,6 +156,7 @@ export const proyectos: Proyecto[] = [
     portada: '/proyectos/placeholder-1.svg',
     galeria: ['/proyectos/placeholder-1.svg', '/proyectos/placeholder-2.svg'],
     destacado: false,
+    ejemplo: true,
     orden: 4,
     contenido: [
       {
