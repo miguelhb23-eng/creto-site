@@ -12,7 +12,7 @@ export const site = {
   ciudad: 'Manizales, Caldas',
   region: 'Eje Cafetero',
   anios: '32+',
-  email: 'contacto@creto.com.co', // ← cambiar por el correo real
+  email: 'cretoingenieriayconstrucciones@gmail.com',
 
   // WhatsApp: formato internacional SIN "+", SIN espacios. Colombia = 57.
   // Ej: número 300 123 4567  ->  '573001234567'
