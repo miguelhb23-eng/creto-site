@@ -38,6 +38,10 @@ export const formularioActivo = !site.web3formsKey.includes('TU_ACCESS_KEY');
  * Copia la foto en public/fotos/ y escribe aquí su ruta, por ejemplo
  * '/fotos/hero.jpg'. Si una ruta queda vacía, el sitio muestra un dibujo
  * técnico en su lugar. Recomendado: JPG horizontal de unos 2400 px de ancho.
+ *
+ * Las rutas /fotos/referencia/ son fotos de internet SOLO para ver el diseño
+ * (créditos en public/fotos/referencia/CREDITOS.md). Mientras quede alguna
+ * aquí o en proyectos.ts, GitHub NO publica el sitio.
  */
 export const fotos: {
   hero: string;
@@ -46,17 +50,22 @@ export const fotos: {
   cierre: string;
   servicios: Record<string, string>;
 } = {
-  hero: '',
-  intro: '',
-  empresa: '',
-  cierre: '',
+  hero: '/fotos/referencia/hero.jpg',
+  intro: '/fotos/referencia/intro.jpg',
+  empresa: '/fotos/referencia/empresa.jpg',
+  cierre: '/fotos/referencia/cierre.jpg',
   servicios: {
-    express: '',
-    remodelaciones: '',
-    construcciones: '',
-    ingenieria: '',
+    express: '/fotos/referencia/express.jpg',
+    remodelaciones: '/fotos/referencia/remodelaciones.jpg',
+    construcciones: '/fotos/referencia/construcciones.jpg',
+    ingenieria: '/fotos/referencia/ingenieria.jpg',
   },
 };
+
+/** Rutas de fotos de referencia que siguen en uso (bloquean la publicación). */
+export function fotosDeReferencia(rutas: string[]): string[] {
+  return rutas.filter((r) => r.includes('/fotos/referencia/'));
+}
 
 export interface Paso {
   titulo: string;

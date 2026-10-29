@@ -1,7 +1,8 @@
 import { defineConfig, type Plugin } from 'vite';
 import { resolve, basename } from 'node:path';
 import { renderPage } from './src/render/pages';
-import { site } from './src/data/site';
+import { site, fotos, fotosDeReferencia } from './src/data/site';
+import { proyectos } from './src/data/proyectos';
 
 /**
  * Genera el HTML de cada página al compilar: reemplaza los marcadores
@@ -27,7 +28,8 @@ function prerender(): Plugin {
 
 /**
  * Freno de seguridad: en GitHub Actions (CI=true) la publicación falla si
- * siguen puestos el número de WhatsApp o la clave del formulario de prueba.
+ * siguen puestos el número de WhatsApp, la clave del formulario de prueba o
+ * alguna foto de referencia de internet.
  * En tu computador solo muestra un aviso, para poder seguir probando.
  */
 function datosReales(): Plugin {
@@ -38,6 +40,16 @@ function datosReales(): Plugin {
       const faltan: string[] = [];
       if (site.whatsapp === '573000000000') faltan.push('el número de WhatsApp (site.whatsapp)');
       if (site.web3formsKey.includes('TU_ACCESS_KEY')) faltan.push('la clave de Web3Forms (site.web3formsKey)');
+      const referencia = fotosDeReferencia([
+        fotos.hero,
+        fotos.intro,
+        fotos.empresa,
+        fotos.cierre,
+        ...Object.values(fotos.servicios),
+        ...proyectos.flatMap((p) => [p.portada, ...p.galeria]),
+      ]);
+      if (referencia.length)
+        faltan.push(`${new Set(referencia).size} fotos reales (siguen las de referencia de /fotos/referencia/)`);
       if (!faltan.length) return;
       const msg = `Faltan datos reales en src/data/site.ts: ${faltan.join(' y ')}.`;
       if (process.env.CI) this.error(`${msg} No se publica el sitio con datos de prueba.`);

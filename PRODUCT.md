@@ -51,7 +51,7 @@ These four are binding (confirmed by the user, 2026-10-29):
 
 ## Evidence on Hand
 
-- **No real photographs exist yet.** There are none of projects, of sites, or of the team, and the only images are `public/proyectos/placeholder-*.svg`.
+- **No real photographs exist yet.** Until they arrive, free Unsplash photos in `public/fotos/referencia/` (credits in CREDITOS.md) stand in so the design can be judged. They are not CRETO work, and the build in CI refuses to publish while any of them is still referenced.
 - **The projects in `src/data/proyectos.ts` are examples, not real work.** The same goes for the team data on the Empresa page. None of it may be presented as genuine.
 - **The home testimonials are examples.** Do not show invented testimonials as real.
 - **Unconfirmed claims.** The current site states the following, but the user has not confirmed them:
